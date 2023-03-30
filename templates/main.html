@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>疫时</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<script src="../static/js/jquery.js"></script>
+		<script src="../static/js/echarts.min.js"></script>
+		<link href="../static/css/main.css" rel="stylesheet" />
+        <script src="../static/js/worldcloud.js"></script>
+	</head>
+	<body>
+           <div id="c0" class="input-group">
+				<select id="select"  onchange="jumpPage(this)">
+                    <option value="" selected="selected" >香港</option>
+                    <option value="" >吉林</option>
+                    <option value="" >台湾</option>
+                    <option value="" >福建</option>
+                    <option value="" >广东</option>
+                    <option value="" >山东</option>
+                    <option value="" >浙江</option>
+                    <option value="" >辽宁</option>
+                    <option value="" >天津</option>
+                    <option value="" >上海</option>
+				</select>
+			 <!-- placeholder的点击消失及为空时点击其他继续显示提示  -->
+                <span class="but">
+                    <form action="/phc" method="get">
+                        <input style="width: 220px;height:38px" type="text" id="searchInput" name="question" class=" " placeholder="请输入省份进行查询" >
+                        <button id="button" class=" " style="height:40px" type="submit" onclick="to()" >搜索</button>
+                    </form>
+                </span>
+                <script>
+                         function jumpPage(searchValue) {
+                             var data =  searchValue.options[searchValue.selectedIndex].text
+                             window.location.href = "https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_pc_3&city=" +data+"-"+data;
+                             // 按Enter键,执行事件
+                             function entersearch(event) {
+                                 if (event.keyCode == 13) {
+                                     to();
+                                 }
+                             }
+                             // 按钮点击触发函数
+                             function to() {
+                                 var searchValue = document.getElementById("searchInput").value;
+                                 //window.location.href="http://www.baidu.com/s?ie=UTF-8&wd="+searchValue;
+                                 jumpPage(searchValue);
+                                 //alert(searchValue);
+                             }
+                         }
+                   </script>
+
+		</div>
+		<div id="title">全国疫情实时跟踪</div>
+		<div id="time"></div>
+		<div id="l1"></div>
+		<div id="l2"></div>
+		<div id="c1">
+			<div class="num">
+				<h1 style="
+                    margin: 20px;
+                 "></h1>
+			</div>
+			<div class="num">
+				<h1 style="
+                    margin-top: 20px;
+                "></h1>
+			</div>
+			<div class="num">
+				<h1></h1>
+			</div>
+			<div class="num">
+				<h1></h1>
+			</div>
+			<div class="txt">
+				<h2 style="
+                    margin: -2px;
+                ">累积确诊</h2>
+			</div>
+			<div class="txt">
+				<h2 style="
+                    margin: -2px;
+                ">剩余疑似</h2>
+			</div>
+			<div class="txt">
+				<h2 style="
+                    margin: -2px;
+                ">累积治愈</h2>
+			</div>
+			<div class="txt">
+				<h2 style="
+                    margin: -2px;
+                ">累积死亡</h2>
+			</div>
+		</div>
+		<div id="c2">
+            <div class="nu">
+				<h1 style="
+                    margin: 5px 0 0;
+                "></h1>
+			</div>
+			<div class="nu">
+				<h1 style="
+                    margin: 4px;
+                "></h1>
+			</div>
+			<div class="tx">
+				<h2 style="
+                    margin: 17px;
+                ">世界疫苗接种总数</h2>
+			</div>
+			<div class="tx">
+				<h2 style="
+                    margin: 17px;
+                ">中国疫苗接种总数</h2>
+			</div>
+        </div>
+        <div id="c3">
+			<div class="scroll-box">
+			 <ul id="ul">
+			 </ul>
+			</div>
+		</div>
+        <div id="c4"></div>
+		<div id="r1"></div>
+		<div id="r2"></div>
+		<script src="../static/js/ec_center4.js"></script>
+		<script src="../static/js/ec_left1.js"></script>
+		<script src="../static/js/ec_left2.js"></script>
+		<script src="../static/js/ec_right1.js"></script>
+		<script src="../static/js/ec_right2.js"></script>
+		<script src="../static/js/controller.js"></script>
+	</body>
+</html>

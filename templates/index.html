@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/main1.css" rel="stylesheet" />
+</head>
+  <div id="left1">
+        <h3>搜索结果如下</h3>
+  </div>
+{#  <div id="right1">#}
+{#        <h3>各省份结果如下</h3>#}
+{#  </div>#}
+    <div id="left">
+        <div class="num">
+            <center>
+                <form action="/gets/" method="post">
+                <hr>
+                <table border="1px" width="500px">
+                    <tr style="text-align:center" >
+                        <th>省份</th>
+                        <th>城市</th>
+                        <th>累积确诊</th>
+                        <th>剩余疑似</th>
+                        <th>累积治愈</th>
+                        <th>累积死亡</th>
+                    </tr>
+                    {% for i in items %}
+                    <tr style="text-align:center">
+                        <td>{{ i.province }}</td>
+                        <td>{{ i.city }}</td>
+                        <td>{{ i.confirm }}</td>
+                        <td>{{ i.confirm_add }}</td>
+                        <td>{{ i.heal }}</td>
+                        <td>{{ i.dead }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                </form>
+            </center>
+        </div>
+    </div>
+{#    <div id="left">#}
+{#        <div class="num">#}
+{#            <center>#}
+{#                <form action="/gets/" method="post">#}
+{#                <hr>#}
+{#                <table  width="500px">#}
+{#                    <tr style="text-align:center" >#}
+{#                        <th>省份</th>#}
+{#                        <th>城市</th>#}
+{#                        <th>累积确诊</th>#}
+{#                        <th>剩余疑似</th>#}
+{#                        <th>累积治愈</th>#}
+{#                        <th>累积死亡</th>#}
+{#                    </tr>#}
+{#                    {% for i in items %}#}
+{#                    <tr style="text-align:center">#}
+{#                        <td>{{ i.province }}</td>#}
+{#                        <td>{{ i.city }}</td>#}
+{#                        <td>{{ i.confirm }}</td>#}
+{#                        <td>{{ i.confirm_add }}</td>#}
+{#                        <td>{{ i.heal }}</td>#}
+{#                        <td>{{ i.dead }}</td>#}
+{#                    </tr>#}
+{#                    {% endfor %}#}
+{#                </table>#}
+{#                </form>#}
+{#            </center>#}
+{#        </div>#}
+{#    </div>#}
+</body>
+</html>

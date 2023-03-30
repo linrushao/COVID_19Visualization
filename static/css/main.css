@@ -1,0 +1,248 @@
+body {
+	margin: 0;
+	background: url(../images/5.gif)no-repeat top center;
+	line-height:1.15;
+}
+
+#title {
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	top: 0%;
+	left: 30%;
+	/* background: #666666; */
+	color: white;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#c0 {
+	position: absolute;
+	width: 30%;
+	height: 8%;
+	top: 1%;
+	left: 1%;
+	 /*background: #222;*/
+	/*color: white;*/
+	/*font-size: 30px;*/
+	/*display: flex;*/
+	
+	/*align-items: center;*/
+	/*justify-content: center;*/
+}
+
+
+.input-group {
+				width: 100%;
+				height: 90%;
+				margin: 0 auto;
+				margin-top: 0.7%;
+				/*border: 1px solid #cccccc;*/
+			}
+			input[type="text"] {
+				height: 70%;
+				width: 60%;
+				background: #FFFFFF;
+				font-size: 14px;
+				float: left;
+				border: 0px solid #FFF;/* 必须加 可能配合下一句使用 */
+				border-left: 1px solid #c0c0c0;
+				padding-left: 15px;
+				outline: none;
+
+			}
+			input,
+			select,
+			a:focus {
+				outline: none;
+			}
+			button[type="submit"] {
+				height: 73%;
+				width: 15%;
+				background: #2699FB;
+				border: 0px solid #ff7496;
+				float: left;
+				cursor: pointer;
+			}
+
+			select[id="select"] {
+				height: 73%;
+				width: 20%;
+				border: 0px solid #ff7496;
+				float: left;
+				color: #8f9db3;
+				background-color: #FFF;
+				padding-left: 15px;
+				/* 鼠标触碰光标变手势 */
+				cursor: pointer;
+				/* 清除默认样式 */
+/* 				appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none; */
+			}
+			div[class="select"]:after {
+			/* 给select添加右侧下拉图标 */
+				content: "";
+				width: 14px;
+				height: 8px;
+				/*background: url(2.jpg) no-repeat 3px 4px ;*/
+				position: relative;
+				float: left;
+				margin-left: -30px;
+				top: 22px;
+				pointer-events: none;
+			}
+
+#time {
+	position: absolute;
+	/* width: 30%; */
+	height: 10%;
+	top: 5%;
+	right: 2%;
+	color: #FFFFFF;
+	font-size: 20px;
+	 /*background: green;*/
+}
+
+#c1 {
+	position: absolute;
+	width: 40%;
+	height: 20%;
+	top: 10%;
+	left: 30%;
+
+	/* background: #2699FB;*/
+}
+
+.num {
+	width: 25%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:greenyellow;
+	font-size: 15px;
+}
+.txt {
+	width: 25%;
+	float: left;
+	font-family: "幼圆";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	color: white;
+}
+
+.nu {
+	width: 50%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: greenyellow;
+	font-size: 15px;
+}
+.tx {
+	width: 50%;
+	float: left;
+	font-family: "幼圆";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	color: white;
+}
+
+
+
+#c2 {
+	position: absolute;
+	width: 40%;
+	height: 30%;
+	top: 30%;
+	left: 30%;
+	/* background: #666666; */
+}
+
+#c3 {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 29%;
+    left: 32%;
+	/*background: #222222;*/
+}
+
+.scroll-box {
+	width: 77%;
+	height: 134px;
+	/* border:2px solid #000; */
+	margin: 7%;
+	margin-right: 65%;
+	margin-top: 18.5%;
+	overflow:hidden;
+}
+.scroll-box ul {
+	list-style:none;
+	width:90%;
+	height:100%;
+}
+.scroll-box ul li {
+	width:100%;
+	height:35px;
+	box-sizing:border-box;
+	color: #FF8C00;
+	line-height:40px;
+	text-align:center;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
+#c4 {
+	position: absolute;
+	width: 40%;
+	height: 35%;
+	top: 65%;
+	left: 30%;
+	/*background: #222222;*/
+}
+
+#l1 {
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 10%;
+	left: 0%;
+	/*background: #666666;*/
+}
+
+#l2 {
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 55%;
+	left: 0%;
+	/*background: #777777;*/
+}
+
+#r1 {
+	position: absolute;
+	width: 30%;
+	height: 45%;
+	top: 11%;
+	right: -1%;
+	/*background: #666666;*/
+}
+
+#r2 {
+	position: absolute;
+    width: 32%;
+    height: 40%;
+    top: 74.2%;
+    left: 75%;
+    margin: -108px;
+	/*background: #777777;*/
+}

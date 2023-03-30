@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background: url(../images/bg.jpg) no-repeat top center;
+    line-height:1.15;
+
+}
+
+header{
+    height: 92px;
+    background:url(../images/head_bg.png) no-repeat ;
+}
+header h1 {
+    font-size: 0.475rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.w{
+    width:1200px;
+    height: auto;
+    margin:auto;
+    #background-color:pink;
+}
+
+#data{
+    height:600px;
+    margin-top:60px;
+    /*background-color:yellow;*/
+}
+
+.map {
+    position: relative;
+    height: 10.125rem;
+    .chart {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      height: 10.125rem;
+      width: 100%;
+    }
+    .map1,
+    .map2,
+    .map3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 6.475rem;
+      height: 6.475rem;
+      background: url(../images/map.png) no-repeat;
+      background-size: 100% 100%;
+      opacity: 0.3;
+    }
+    .map2 {
+      width: 8.0375rem;
+      height: 8.0375rem;
+      background-image: url(../images/lbx.png);
+      opacity: 0.6;
+      animation: rotate 15s linear infinite;
+      z-index: 2;
+    }
+    .map3 {
+      width: 7.075rem;
+      height: 7.075rem;
+      background-image: url(../images/jt.png);
+      animation: rotate1 10s linear infinite;
+    }
